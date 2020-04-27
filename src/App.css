@@ -1,0 +1,144 @@
+.App {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 50px;
+  pointer-events: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.App-header {
+  width:100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #5e6d82;
+}
+
+.mainContainer {
+  width: 100%;
+  height: calc(100vh - 60px);
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+}
+.mainContainer .mainLeft {
+  width: 100%;
+  border-right: 2px dashed #e8eaec;
+}
+.mainContainer .mainRight {
+  width: 100%;
+}
+.ul-container,
+ul{
+  width:400px;
+}
+.ul-container{
+  overflow:hidden;
+}
+ul{
+  margin-left:-50px;
+}
+
+li{
+  float:left;
+  list-style: none;
+  width:99px;
+  margin-top: 8px;
+  padding: 2px;
+  text-align: center;
+  border-left:1px solid #999;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+td,th {
+  padding-right: 25px;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  border: 1px solid #e8eaec;
+  white-space: normal;
+  word-break: break-all;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 2px;
+}
+th {
+  text-align: center;
+}
+.AddBtn {
+  display: block;
+  width: 80px;
+  margin-left: 15px;
+  background-color: #a1bbee;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.deleteBtn {
+  display: block;
+  width: 80px;
+  margin-left: 15px;
+  background-color: #a1bbee;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.deleteBtn:hover{
+  background-color: #bdbdd8;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+input,select{
+  margin: 6px;
+  height: 28px;
+  width: 160px;
+  display: inline-block;
+  padding: 2px;
+}
+
+.box{
+  width: 130px;
+  height: 130px;
+  margin-left: 30px;
+  display: block;
+  position: relative;
+}
+
+.avator {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  width: 110px;
+  height: 100%;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  background: linear-gradient(135deg,transparent 80%,blue 20%);
+}

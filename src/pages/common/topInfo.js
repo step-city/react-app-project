@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import logo from '../../assets/img/logo.svg';
+import './product.less'
 
 export default class TopInfo extends Component {
     render() {

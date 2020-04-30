@@ -4,17 +4,9 @@ import './index.less';
 //导入路由Js
 import RouterJs from './router/index';
 import * as serviceWorker from './serviceWorker';
-//引用redux存储
-import { createStore } from 'redux'
-import { Provider } from 'react-redux'
-import reduceStore from './reducers'
-
-let store = createStore(reduceStore)
 
 ReactDOM.render(
-    <Provider store={store}>
-        <RouterJs />
-    </Provider>, document.getElementById('root')
+    <RouterJs />, document.getElementById('root')
 );
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

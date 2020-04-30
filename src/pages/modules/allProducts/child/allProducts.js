@@ -2,20 +2,19 @@
 import React from 'react'
 //导入子组件 
 import ProductLists from './allProductLists'
+class AllProducts extends React.Component {
 
-class AllProducts extends React.Component{
-    render(){
-        // console.log(AllProductsJson);
-        addProduct = (e) =>{
-            //获得子组件传递的数据
-            console.log(e)
-            //数据传入函数
-            // this.props.onSubmitData(e);
-        }
-        
-        return(
+    addProduct = (e) => {
+        //获得子组件传递的数据
+        console.log(e)
+        //数据传入函数
+        // this.props.onSubmitData(e);
+    }
+
+    render() {
+        return (
             <div className="allProducts">
-                 <ProductLists onSubmitData={this.addProduct} />
+                <ProductLists onSubmitData={this.addProduct} />
             </div>
         )
     }

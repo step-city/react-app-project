@@ -1,6 +1,8 @@
 import React from 'react';
 //需要补充BrowserRouter,否则报错无法识别浏览器路径
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+// import { HashRouter as Router, Route, Redirect } from 'react-router-dom'; 
+
 import TopInfo from '../pages/common/topInfo';
 import Navigator from '../pages/common/leftNavigator';
 
@@ -26,6 +28,9 @@ class RouterJs extends React.Component {
                                 </div>
                                 <div className="right_cont">
                                     <div className="showComp">
+                                        {/* <Route path="/">
+                                            <Redirect to="/home" />
+                                        </Route> */}
                                         <Switch>
                                             <Route exact path="/" component={AllProducts} />
                                             <Route path="/myProducts" component={MyProducts} />
